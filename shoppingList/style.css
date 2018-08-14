@@ -1,0 +1,92 @@
+body {
+  min-width: 576px;
+  width: 50%;
+}
+
+
+h1, input , ul .btnEnter {
+  width: 100%;
+}
+
+li {
+ width: 80%;
+}
+
+h1 {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-weight: 900;
+  color: #dc3545;
+  text-shadow: 2px 2px 5px #000000;
+}
+
+h1::before {
+  content: url(shopping_cart_min.png);
+  padding-right: 2rem;
+}
+
+input {
+  padding: .5rem 1rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: .3rem;
+}
+input:focus {
+box-shadow: none;
+}
+
+.list-group {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.list-group-item-style{
+  position: relative;
+  display: block;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: .3rem;
+}
+
+.done {
+  text-decoration: line-through;
+}
+
+/*----Button----*/
+
+.btn-danger {
+  border: 2px solid rgba(0,0,0,.125);
+}
+
+
+.btnDelete {
+  width: 20%;
+  display: inline-block;
+  border-bottom-right-radius: .3rem;
+  border-bottom-right-radius: .3rem;
+  border: 2px solid rgba(0,0,0,.125);
+}
+
+/*.btnDelete:link, .btnDelete:visited, .btnDelete:hover , .btnDelete:active {
+  border-color: rgba(0,0,0,.15);
+  background-color: #FFAAAA;
+  box-shadow: none;
+}*/
+
+.btn-danger:focus, .btn-outline-danger:focus {
+  box-shadow: none;
+  border: 2px solid rgba(0,0,0,.8);
+}
+
+
+.btn-danger:not(:disabled):not(.disabled):active:focus, .btn-danger:not(:disabled):not(.disabled).active:focus,
+.show > .btn-danger.dropdown-toggle:focus {
+  box-shadow: none;
+  border: 2px solid rgba(0,0,0,.8);
+}
+
+.btn-outline-danger:not(:disabled):not(.disabled):active:focus, .btn-outline-danger:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-danger.dropdown-toggle:focus {
+  box-shadow: none;
+}
